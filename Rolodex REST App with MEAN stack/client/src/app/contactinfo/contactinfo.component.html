@@ -1,0 +1,54 @@
+<div *ngIf="!editing">
+  <div class="card bg-dark text-light">
+    <div class="card-body">
+      <div class="card-header">
+        <button class="btn btn-outline-secondary mt-2 my-sm-0" (click)="changeEditing()">Edit</button>
+      </div>
+
+      <h5 class="card-title">{{contact.name }}</h5>
+      <p class='card-text'>{{contact.email}}
+      </p>
+      <p class='card-text'>{{contact.phone}}
+      </p>
+      <p class='card-text'>{{contact.address}}
+      </p>
+      <div class="card-footer "><button class="btn btn-outline-danger mt-2 my-sm-0" (click)="deleteThisItem()">Delete</button></div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="editing">
+  <div class="card bg-dark text-light">
+    <div class="card-body">
+      <div class="card-header">
+        <button class="btn btn-outline-secondary mt-2 my-sm-0" (click)="changeEditing()">View</button>
+      </div>
+      <form #form="ngForm" (ngSubmit)="updateContact(form.value)">
+        <div class="form-group">
+          <label for="nameField"> Name: </label>
+          <input #name id="nameField" name="nameField" class="form-control" [ngModel]="contact.name">
+          <br />
+
+          <label for="emailField"> Email: </label>
+          <input #name id="emailField" name="emailField" class="form-control" [ngModel]="contact.email">
+          <br />
+          <label for="phoneField"> Phone: </label>
+          <input #name id="phoneField" name="phoneField" class="form-control" [ngModel]="contact.phone">
+          <br />
+
+          <label for="addressField"> Address: </label>
+          <input #name id="addressField" name="addressField" class="form-control" [ngModel]="contact.address">
+          <br />
+
+        </div>
+        <div class="card-footer">
+
+          <button class="btn btn-outline-primary mt-2 my-sm-0" type="submit">Update</button>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

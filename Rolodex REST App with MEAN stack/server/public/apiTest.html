@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script type="text/javascript" src="apiTest.js"></script>
+</head>
+
+<body class="bg-secondary"></body>
+<nav class="navbar navbar-dark bg-dark sticky-top text-light">
+  <a href='/'>
+    <h1>My Contacts</h1>
+  </a>
+</nav>
+<div class="mx-auto text-center">
+  <h3>
+    <p>This page tests REST functions hosted on my digital ocean server</p>
+  </h3>
+  <h5>
+    <p>Changes to the database can be observed at <a href='http://206.189.77.154:2000/'>http://206.189.77.154:2000/</a> </p>
+    <p>Update and Delete rely on ID from Create.</p>
+    <p>To test CORs functionality, open this folder in the file system.</p>
+  </h5>
+</div>
+
+<div class="mx-auto text-center">
+
+  <button class="btn btn-warning" id="createTest" type="button">Create</button>
+  <button class="btn btn-warning" id="readTest" type="button">Read</button>
+  <button class="btn btn-warning" id="updateTest" type="button">Update</button>
+  <button class="btn btn-warning" id="deleteTest" type="button">Delete</button>
+
+</div>
+
+<div class="card mx-auto" style="width: 18rem; height: 300px; overflow-y:scroll;">
+  <div class="card-body">
+    <h5 class="card-title">Console Output</h5>
+    <p class="card-text">
+      <div id="display"></div>
+    </p>
+  </div>
+
+</html>

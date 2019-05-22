@@ -1,0 +1,19 @@
+<nav class="navbar navbar-dark bg-dark ">
+  <a class="navbar-brand" href="#">Home</a>
+
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+
+
+      <form #newContactForm="ngForm" (ngSubmit)="newContact()" class="form-inline my-2 my-lg-0">
+        <input #name required minlength="1" class="form-control mr-sm-2" name="name" placeholder="name" [(ngModel)]="contact.name">
+        <input #email required minlength="1" class="form-control mr-sm-2" name="email" placeholder="email" [(ngModel)]="contact.email">
+        <input #phone required minlength="1" class="form-control mr-sm-2" name="phone" placeholder="phone" [(ngModel)]="contact.phone">
+        <input #address required minlength="1" class="form-control mr-sm-2" name="address" placeholder="address" [(ngModel)]="contact.address">
+        <button class="btn btn-outline-success my-2 my-sm-0" [disabled]="!newContactForm.valid">Add</button>
+      </form>
+    </li>
+
+
+  </ul>
+</nav>

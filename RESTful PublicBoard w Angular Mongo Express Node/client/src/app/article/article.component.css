@@ -1,0 +1,20 @@
+div{
+  width: 75vw;
+  margin: auto;
+}
+
+form{
+  width: 50vw;
+  margin: auto;
+}
+
+#add{
+  margin: 10px;
+}
+
+.innerText {
+  white-space: pre-wrap;
+  text-align: left;
+  width: 75%;
+  margin: auto;
+}
