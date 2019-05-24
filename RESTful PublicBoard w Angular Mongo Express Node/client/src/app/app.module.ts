@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { HeadlineComponent } from './headline/headline.component';
 import { FormsModule } from '@angular/forms';
+// Allows app to reload the page
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/myblog', pathMatch: 'full' },
@@ -30,7 +33,7 @@ const routes: Routes = [
   routes
 )
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

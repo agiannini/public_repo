@@ -108,6 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_article_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./article/article.component */ "./src/app/article/article.component.ts");
 /* harmony import */ var _headline_headline_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./headline/headline.component */ "./src/app/headline/headline.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 
 
 
@@ -116,6 +117,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// Allows app to reload the page
 
 var routes = [
     { path: '', redirectTo: '/myblog', pathMatch: 'full' },
@@ -139,7 +142,7 @@ var AppModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(// Handles routing according to specifications
                 routes)
             ],
-            providers: [],
+            providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_9__["HashLocationStrategy"] }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
@@ -424,7 +427,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Alex\Desktop\blog\client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Alex\Desktop\public_repo\RESTful PublicBoard w Angular Mongo Express Node\client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
