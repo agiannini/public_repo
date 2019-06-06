@@ -10,5 +10,4 @@ Features includes:
 
 To use this app install all the dependencies and add a .env file to the backend folder containing CLIENT_ID and CLIENT_SECRET from the Spotify Developer Account.
 
-The application will work without being logged into Spotify. However, if you are not logged in it will play only a thirty second clip of each song. 
-To hear the whole songs login to your spotify account.
+The application will work without being logged into Spotify. However, if you are not logged in it will play only a thirty second clip of each song. To hear the whole songs login to your spotify account.
