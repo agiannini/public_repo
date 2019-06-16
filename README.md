@@ -1,7 +1,13 @@
-Thank you for visiting! My name is Alex Giannini. I just graduated from Harvard University's Extension School
- with an Bachelors of Liberal Arts, Field: Computer Science Minor: Math.
-I am looking for work as a web developer in the New York City Area.
+Hi!
 
-This respository contains a handful of projects that are meant to  demonstrate a knowledge of REST, security, databases and other full-stack principles. They are  not an exhaustive presentation of my 
-skills. See them hosted at 
-www.alex-g-portfolio.me. 
+To see code for my RESTful Rolodex Application with Angular, Express 
+MongoDB and Node: https://github.com/agiannini/Rolodex-wExpress-REST-API
+
+To see code for my Python/Flask/SQL Book Review Application visit: 
+https://github.com/agiannini/PythonReview
+
+To see code for my Angular/Express Spotify API visit: 
+https://github.com/agiannini/App-With-Spotify-API
+
+To see my MEAN stack Public Posting Board visit: 
+https://github.com/agiannini/PostingBoard
